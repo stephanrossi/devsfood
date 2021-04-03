@@ -6,7 +6,7 @@ const MenuItem = ({ icon, link }) => {
   const history = useHistory()
   const location = useLocation()
 
-  const isActive = location.pathname == link
+  const isActive = location.pathname === link
 
   const handleLinkClick = (e) => {
     e.preventDefault()

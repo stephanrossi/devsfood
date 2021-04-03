@@ -14,7 +14,6 @@ export const LinkArea = styled.a`
         width: ${props => props.active ? '' : '58px'};
         height: ${props => props.active ? '' : '58px'};
         border: ${props => props.active ? 'none' : '1px solid #0B4D0B'};
-;
     }
 `
 
