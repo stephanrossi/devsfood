@@ -19,4 +19,5 @@ export const PageBody = styled.div`
   flex: 1;
   background-color: #35980f;
   background: url("assets/bg.png");
+  overflow-y: auto;
 `

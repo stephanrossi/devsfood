@@ -5,11 +5,13 @@ export const Container = styled.div`
     padding: 15px;
 `;
 
-
 export const CategoryArea = styled.div`
-    
+    color: #FFF;
+    margin-top: 20px;
+    font-size: 18px;
 `;
 
 export const CategoryList = styled.div`
-
+    display: flex;
+    margin-top: 20px;
 `;
