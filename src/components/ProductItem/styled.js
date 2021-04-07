@@ -1,58 +1,59 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 380px;
-    height: 100px;
-    background-color: ${props => props.active == props.id ? '#FFF' : '#AAE09A'};
+    background-color: #FFF;
     border-radius: 5px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-right: 10px;
     cursor: pointer;
-    transition: all ease .3s;
-    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
 `
 export const ProductPhotoArea = styled.div`
+    width: 100px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const ProductPhoto = styled.img`
-    /* padding: 10px; */
-    width: auto;
-    height: 80px;
+    width: 100%;
     border-radius: 20px;
-
 `;
 
 export const ProductInfoArea = styled.div`
+    flex: 1;
+    color: green;
     margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
+    margin-right: 10px;
 `;
 
 export const ProductName = styled.div`
-    color: green;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
 `;
 
 export const ProductPrice = styled.div`
-    color: green;
-
+    font-size: 14px;
 `;
 
 export const ProductIngredients = styled.div`
-    color: green;
-
+    font-size: 11px;
+    overflow-x: hidden;
 `
 
-export const ProductButtonArea = styled.div``;
+export const ProductButtonArea = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 80px;
+`;
 
 export const ProductButton = styled.img`
     margin: 20px;
-    width: 40px;
+    width: 15px;
     height: auto;
 `;
