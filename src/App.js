@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import ReactToolTip from 'react-tooltip';
 import { Container, Menu, PageBody } from './components/MainComponents'
 
@@ -11,8 +11,8 @@ import Cart from './components/Cart';
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
 
-export default () => {
-    const name = useSelector(state => state.user.name);
+export default function Routes() {
+    // const name = useSelector(state => state.user.name);
 
     return (
         <BrowserRouter>

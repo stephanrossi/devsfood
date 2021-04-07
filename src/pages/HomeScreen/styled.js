@@ -40,7 +40,7 @@ export const ProductPaginationArea = styled.div`
 `;
 
 export const ProductPaginationItem = styled.div`
-    background-color: ${props => props.active == props.current ? '#aae09b' : '#FFF'};
+    background-color: ${props => props.active === props.current ? '#aae09b' : '#FFF'};
     padding: 5px 10px;
     margin: 3px;
     border-radius: 5px;

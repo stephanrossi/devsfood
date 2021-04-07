@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useHistory } from "react-router-dom"
+// import { useHistory } from "react-router-dom"
 import {
   Container,
   CategoryHeader,
@@ -19,7 +19,7 @@ import CategoryItem from "../../components/CategoryItem"
 import ProductItem from "../../components/ProductItem"
 
 export default () => {
-  const history = useHistory()
+  // const history = useHistory()
   const [headerSearch, setHeaderSearch] = useState("")
   const [categories, setCategories] = useState([])
   const [products, setProducts] = useState([])
@@ -30,7 +30,7 @@ export default () => {
 
   const getProducts = async () => {
     const prods = await api.getProducts()
-    if (prods.error == "") setProducts(prods.result.data)
+    if (prods.error === "") setProducts(prods.result.data)
     setTotalPages(prods.result.pages)
     setActivePage(prods.result.page)
   }
@@ -43,7 +43,7 @@ export default () => {
   useEffect(() => {
     const getCategories = async () => {
       const cat = await api.getCategories()
-      if (cat.error == "") setCategories(cat.result)
+      if (cat.error === "") setCategories(cat.result)
       ReactToolTip.rebuild()
     }
     getCategories()
