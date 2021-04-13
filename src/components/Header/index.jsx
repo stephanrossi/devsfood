@@ -22,7 +22,7 @@ export default ({ search, onSearch }) => {
       <SearchInput
         type="text"
         value={search}
-        placeholder="Qual produto você quer buscar?"
+        placeholder="Qual produto você deseja?"
         onChange={handleChange}
         active={inputActive}
         onFocus={handleInputFocus}
