@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useHistory } from "react-router-dom"
+// import { useHistory } from "react-router-dom"
 import {
   Container,
   CategoryHeader,
@@ -21,7 +21,7 @@ import ProductItem from "../../components/ProductItem"
 let searchTimer = null
 
 export default () => {
-  const history = useHistory()
+  // const history = useHistory()
   const [headerSearch, setHeaderSearch] = useState("")
   const [categories, setCategories] = useState([])
   const [products, setProducts] = useState([])
@@ -57,7 +57,7 @@ export default () => {
   useEffect(() => {
     const getCategories = async () => {
       const cat = await api.getCategories()
-      if (cat.error == "") setCategories(cat.result)
+      if (cat.error === "") setCategories(cat.result)
       ReactToolTip.rebuild()
     }
     getCategories()

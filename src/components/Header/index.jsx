@@ -9,7 +9,7 @@ export default ({ search, onSearch }) => {
   }
 
   const handleInputBlur = () => {
-    if (search == "") setInputActive(false)
+    if (search === "") setInputActive(false)
   }
 
   const handleChange = (e) => {
