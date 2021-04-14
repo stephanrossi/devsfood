@@ -43,6 +43,7 @@ export default () => {
       activePage,
       activeSearch
     )
+
     if (prods.error == "") setProducts(prods.result.data)
     setTotalPages(prods.result.pages)
     setActivePage(prods.result.page)
@@ -132,7 +133,7 @@ export default () => {
         </ProductPaginationArea>
       )}
       <Modal status={modalStatus} setStatus={setModalStatus}>
-        <ModalProduct data={modalData} />
+        <ModalProduct data={modalData} setStatus={setModalStatus} />
       </Modal>
     </Container>
   )
