@@ -9,7 +9,6 @@ import MenuItem from './components/MenuItem';
 import Cart from './components/Cart';
 
 import HomeScreen from './pages/HomeScreen';
-import Tela2Screen from './pages/Tela2Screen';
 
 export default function Routes() {
     // const name = useSelector(state => state.user.name);
@@ -33,9 +32,6 @@ export default function Routes() {
                         <PrivateRoute path="/profile">
                             <div>Tela de perfil</div>
                         </PrivateRoute>
-                        <Route path="/tela2/:nome">
-                            <Tela2Screen />
-                        </Route>
                     </Switch>
                 </PageBody>
                 <Cart />

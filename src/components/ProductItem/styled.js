@@ -9,6 +9,11 @@ export const Container = styled.div`
     cursor: pointer;
     padding: 10px;
     cursor: pointer;
+    transition: all ease .1s;
+
+    &:hover{
+        transform: scale(1.04, 1.04)
+    }
 `
 export const ProductPhotoArea = styled.div`
     width: 100px;

@@ -8,7 +8,8 @@ const persistConfig = {
     key: 'root',
     storage,
     whitelist: [
-        'user'
+        'user',
+        'cart'
     ]
 };
 
