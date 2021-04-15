@@ -20,8 +20,9 @@ import {
 
 export default () => {
   const products = useSelector((state) => state.cart.products)
-  const [openCart, setOpenCart] = useState(true)
+  const [openCart, setOpenCart] = useState(false)
   const [down, setDown] = useState(false)
+  
   const dispatch = useDispatch()
 
   const toggleCartBody = () => {

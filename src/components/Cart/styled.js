@@ -47,7 +47,7 @@ export const CartBody = styled.div`
 export const CartDown = styled.img`
     width: 23px;
     transform: ${props => props.active ? '' : 'rotate(180deg)'};
-    transition: all ease .2s;
+    transition: all ease .4s;
 `
 
 export const ProductArea = styled.div``
